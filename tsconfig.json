@@ -1,0 +1,14 @@
+{
+  	"compilerOptions": {
+    	"outDir": "/public",
+    	"noImplicitAny": true,
+    	"module": "es6",
+    	"target": "es5",
+    	"jsx": "preserve",
+    	"allowJs": true,
+        "moduleResolution": "node",
+    	"sourceMap": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+  	}
+}

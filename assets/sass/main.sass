@@ -1,0 +1,127 @@
+$info-left-right-padding: 30px
+
+body
+    background-color: white
+
+header
+    margin-left: 40px
+    font-family: "Arial"
+
+.main
+    width: 1000px
+    margin-left: 50%
+    transform: translateX(-50%)
+
+.search-bar 
+    img
+        width: 20px
+        float: right
+
+.search-bar
+    margin-left: 40px
+    margin-right: 40px
+    padding: 10px
+    border-left: 1px solid black
+    border-top: 1px solid black
+    border-right: 1px solid black
+    border-bottom: 2px solid lightgray
+    border-radius: 5px
+
+#keyword
+    font-size: 80%
+    width: 90%
+    border: none
+
+#keyword:focus
+    outline: none
+
+#keyword::placeholder
+    color: lightgray
+
+.container
+    height: 500px
+    display: flex
+    flex-direction: row
+    margin-top: 25px
+    align-items: center
+
+.prev
+    width: 40px
+    vertical-align: top
+
+.article
+    width: 920px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    height: 100%
+    grid-column-gap: 0px;
+
+.next
+    width: 40px
+    float: right
+    
+    img
+        float: right
+
+.image
+    width: 100%
+    height: 100%
+    display: inline-block
+    position: relative
+
+    img
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        height: 100%
+        width: 100%
+        object-fit: cover
+        border-top-left-radius: 5px
+        border-bottom-left-radius: 5px
+
+.info
+    width: 100%
+    height: 100%
+    position: relative
+    display: inline-block
+    background-color: whitesmoke
+    border-top-right-radius: 5px
+    border-bottom-right-radius: 5px
+
+    h2
+        max-height: 40%;
+        margin-top: 0%
+        margin-bottom: 0%
+        font-family: "Arial"
+        font-size: 28px
+        padding: $info-left-right-padding $info-left-right-padding 0px $info-left-right-padding
+    
+    h3
+        margin: auto
+        vertical-align: top
+        padding: 0px $info-left-right-padding 0px $info-left-right-padding
+        font-family: "Arial" 
+        font-weight: lighter
+        font-size: 14px
+    
+    footer
+        max-width: calc(100% - $info-left-right-padding)
+        position: absolute
+        bottom: 0px
+        padding: $info-left-right-padding 0px 40px $info-left-right-padding
+        font-family: Arial, Helvetica, sans-serif
+        font-size: 20px
+        
+        a
+            color: rgb(100, 100, 100)
+            text-decoration: none
+            border-bottom: 1px solid rgb(100,100,100)
+            padding-bottom: 2px
+
+    p
+        max-height: 40%
+        padding: 10px $info-left-right-padding $info-left-right-padding $info-left-right-padding
+        font-family: Arial, Helvetica, sans-serif
+        font-size: 16px
+        overflow: auto

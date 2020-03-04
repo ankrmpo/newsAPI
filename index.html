@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>News</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="public/bundle.css">
+        
+    </head>
+    <body>
+        <div class="main">
+            <header>
+                <h1>Pretraži vijesti</h1>
+            </header>
+            <div class="search-bar">
+                <input type="text" id="keyword" placeholder="Pretraži">
+                <img src="public/img/search.png" id="search">
+            </div>
+            <div class="container">
+                <div class="prev">
+                    <img src="./public/img/left-arrow.png" alt="Previous">
+                </div>
+                <div class="article">
+                    <div class="image">
+                        <img v-bind:src="imageLink">
+                    </div>
+                    <div class="info">
+                        <h2>{{ Title }}</h2>
+                        <h3> {{ Author }}</h3>
+                        <p>
+                            {{ Information }}
+                        </p>
+                        <footer>
+                            <a v-bind:href="articleLink">{{ Link }}</a>
+                        </footer>
+                    </div>
+                </div>
+                <div class="next">
+                    <img src="public/img/right-arrow.png">
+                </div>                
+            </div>
+        </div>
+
+        <script src="public/bundle.js"></script>
+    </body>
+</html>
